@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Home Page</title>
+  <link rel="stylesheet" type="text/css" href="home.css">
+</head>
+<body>
+<div id="header">
+ <div id="nav">
+    <ul>
+      <li><a href="https://www.google.co.in/?gws_rd=ssl">Movie Flix</a></li>
+      <li><a href="https://www.google.co.in/?gws_rd=ssl">DVD</a></li>
+      <li><a href="https://www.google.co.in/?gws_rd=ssl">Movies</a></li>
+      <li><a href="https://www.google.co.in/?gws_rd=ssl">Songs</a></li>
+    </ul>
+  </div>
+</div>
+ <div id="contents">
+<div id="content">
+  <a class="w3-btn-floating" style="position:fixed;top:30%;right:0;color: white" onclick="plusDivs(1)">❯</a>
+  <div id="aside">Romantic Songs</div>
+  <p>
+    <iframe class="mySlides" width="250" height="250" src="https://www.youtube.com/embed/HmfQpbfOZxM" frameborder="0" allowfullscreen></iframe>
+  </p>
+  <p>
+    <iframe class="mySlides" width="250" height="250" src="https://www.youtube.com/embed/NdNRdVT-ewM" frameborder="0" allowfullscreen></iframe>
+  </p>
+  <p>
+    <iframe class="mySlides" width="250" height="250" src="https://www.youtube.com/embed/NTYPkjgFCms" frameborder="0" allowfullscreen></iframe>
+  </p>
+  <p>
+    <iframe class="mySlides" width="250" height="250" src="https://www.youtube.com/embed/_XiKTpOR_lc" frameborder="0" allowfullscreen></iframe>
+  </p>
+  <p>
+    <iframe class="mySlides" width="250" height="250" src="https://www.youtube.com/embed/0gquu1wW5-o" frameborder="0" allowfullscreen></iframe>
+  </p>
+  <p>
+    <iframe class="mySlides" width="250" height="250" src="https://www.youtube.com/embed/HdkuYAy9b5Y" frameborder="0" allowfullscreen></iframe>
+  </p>
+  <p>
+    <iframe class="mySlides" width="250" height="250" src="https://www.youtube.com/embed/f4pIR-Z4JMc" frameborder="0" allowfullscreen></iframe>
+  </p>
+  <p>
+    <iframe class="mySlides" width="250" height="250" src="https://www.youtube.com/embed/AiVxS5Hloko" frameborder="0" allowfullscreen></iframe>
+  </p>
+  <p>
+    <iframe class="mySlides" width="250" height="250" src="https://www.youtube.com/embed/deRfnbnLM6w" frameborder="0" allowfullscreen></iframe>
+  </p>
+  <p>
+    <iframe class="mySlides" width="250" height="250" src="https://www.youtube.com/embed/ib1CZqLMcIE" frameborder="0" allowfullscreen></iframe>
+  </p>
+  <a class="w3-btn-floating" style="position:fixed;top:30%;left:0;color: white" onclick="plusDivs(-1)">❮</a>
+</div>
+ <div id="content1">
+   <a class="w3-btn-floating" style="position:fixed;top:70%;right:0;color: white" onclick="plusDivs1(1)">❯</a>
+   <div id="aside1">Adventure Movies</div>
+   <p>
+     <iframe class="mySlides1"  width="250" height="250" src="https://www.youtube.com/embed/l2PkgckiETM" frameborder="0" allowfullscreen></iframe>
+   </p>
+   <p>
+     <iframe class="mySlides1" width="250" height="250" src="https://www.youtube.com/embed/jG6WV-jjG04"  frameborder="0" allowfullscreen></iframe>
+   </p>
+   <p>
+     <iframe class="mySlides1" width="250" height="250" src="https://www.youtube.com/embed/LiGKfOaENo4"  frameborder="0" allowfullscreen></iframe>
+   </p>
+   <p>
+     <iframe class="mySlides1" width="250" height="250" src="https://www.youtube.com/embed/yMZFFijXaac" frameborder="0" allowfullscreen></iframe>
+   </p>
+   <p>
+     <iframe class="mySlides1" width="250" height="250" src="https://www.youtube.com/embed/A0rzTRF2bBc" frameborder="0" allowfullscreen></iframe>
+   </p>
+   <p>
+     <iframe class="mySlides1" width="250" height="250" src="https://www.youtube.com/embed/7JdVXKFyCQA" frameborder="0" allowfullscreen></iframe>
+   </p>
+   <p>
+     <iframe class="mySlides1" width="250" height="250" src="https://www.youtube.com/embed/ry4jaUDInQw" frameborder="0" allowfullscreen></iframe>
+   </p>
+   <p>
+     <iframe class="mySlides1" width="250" height="250" src="https://www.youtube.com/embed/7JgrjL--AqA" frameborder="0" allowfullscreen></iframe>
+   </p>
+   <p>
+     <iframe class="mySlides1" width="250" height="250" src="https://www.youtube.com/embed/1rPSWZButvA" frameborder="0" allowfullscreen></iframe>
+   </p>
+   <p>
+     <iframe class="mySlides1" width="250" height="250" src="https://www.youtube.com/embed/JVOfviqfWFU" frameborder="0" allowfullscreen></iframe>
+   </p>
+   <a class="w3-btn-floating" style="position:fixed;top:70%;left:0;color: white" onclick="plusDivs1(-1)">❮</a>
+ </div>
+ </div>
+<div id="footer">
+  <ul>
+    <li><a href="https://www.google.co.in/?gws_rd=ssl">About Us</a></li>
+    <li><a href="https://www.google.co.in/?gws_rd=ssl">Contact Us</a></li>
+    <li><a href="https://www.google.co.in/?gws_rd=ssl">Privacy Agreement</a></li>
+  </ul>
+</div>
+<script>
+  var startindex=0;
+  var slideIndex = 1;
+  showDivs(slideIndex);
+
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+
+  function showDivs(n) {
+    var i,k;
+    var x = document.getElementsByClassName("mySlides");
+    if (n*5>x.length || startindex==x.length)
+    {
+      startindex= 0
+      slideIndex=1
+    }
+    if(n<1)
+    {
+      startindex=x.length-5
+      slideindex=x.length/5
+    }
+
+    var l;
+    for(l=0;l<x.length;l++)
+      x[l].style.display = "none";
+    for (i = startindex,k=0; i < x.length,k<5; i++)
+    {
+      x[i].style.display = "block";
+      startindex=i+1;
+      k++;
+    }
+
+  }
+</script>
+<script>
+  var startindex=0;
+  var slideIndex = 1;
+  showDivs1(slideIndex);
+
+  function plusDivs1(n) {
+    showDivs1(slideIndex += n);
+  }
+
+  function showDivs1(n) {
+    var i,k;
+    var x = document.getElementsByClassName("mySlides1");
+    if (n*5>x.length || startindex==x.length)
+    {
+      startindex= 0
+      slideIndex=1
+    }
+    if(n<1)
+    {
+      startindex=x.length-5
+      slideindex=x.length/5
+    }
+
+    var l;
+    for(l=0;l<x.length;l++)
+      x[l].style.display = "none";
+    for (i = startindex,k=0; i < x.length,k<5; i++)
+    {
+      x[i].style.display = "block";
+      startindex=i+1;
+      k++;
+    }
+
+  }
+</script>
+</body>
+</html>

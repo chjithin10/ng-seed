@@ -1,0 +1,17 @@
+body {
+  background-image: url("backgorund.jpg");
+}
+div#content{
+  position:fixed;
+  top:30%;
+  left:40%;
+  width: 300px; /*width of content area*/
+  height: 400px; /*height of content area*/
+  padding: 10px;
+  border: 1px solid black;
+  margin: 15px;
+  background-image: url("movie.jpg");
+  background-color:white;
+  color:blue;
+}
+
